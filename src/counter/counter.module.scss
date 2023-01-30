@@ -7,63 +7,43 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: rgb(146, 222, 209);
+    background-color: rgb(79, 161, 224);
 }
-.counter-wrapper {
+.multiple-choice {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem 2rem;
-    background-color: rgb(255, 255, 255);
-}
-.counter-wrapper label {
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    color: rgba(34, 34, 34, 0.685);
-    font-weight: 500;
-}
-.counter-wrapper input {
-    font-size: 1.2rem;
-    background-color: rgba(208, 208, 208, 0.651);
-    border-radius: 10px;
-    border: none;
-    padding: 0.4rem 0.5rem;
-}
-.counter-wrapper input:focus {
-    background-color: rgba(187, 233, 239, 0.651);
-    border: 1px solid rgba(187, 233, 239, 0.651);
-}
-.counter-content {
+    justify-content: space-between;
+    background-color: rgba(0, 30, 53, 0.866);
     color: white;
-}
-.counter-content input {
-    color: rgba(0, 0, 0, 0.505);
-    padding: 0.7rem 1rem;
-    font-size: 1.2rem;
     border-radius: 10px;
-    border: none;
-    margin-bottom: 1rem;
+    padding: 1rem 2rem;
 }
-.sex {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
+.question-wrapper {
+    margin-right: 4.5rem;
 }
-.input-sex {
-    margin: 0.2rem 0.3rem;
+.question-items {
+    list-style: none;
 }
-.register {
-    font-size: 1rem;
-    border-radius: 10px;
+.question-items li {
+    padding: 0.5rem 0.7rem;
     cursor: pointer;
-    padding: 0.5rem;
-    border: none;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 116, 198, 0.505);
 }
-.register:hover {
-    opacity: 1.2;
+.question-items li:hover {
+    transition: all linear;
+    border: 3px solid rgba(86, 182, 255, 0.795);
+}
+.question-wrapper span {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.text-question {
+    text-align: center;
+    margin-top: 3rem;
 }
